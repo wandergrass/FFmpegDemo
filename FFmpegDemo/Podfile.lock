@@ -1,0 +1,64 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Masonry (1.1.0)
+  - MWHttpUnit (0.3.9):
+    - AFNetworking
+    - MWHttpUnit/CacheUnit (= 0.3.9)
+    - MWHttpUnit/Extension (= 0.3.9)
+    - MWHttpUnit/HTTP (= 0.3.9)
+    - MWHttpUnit/HTTPCacheUnit (= 0.3.9)
+  - MWHttpUnit/CacheUnit (0.3.9):
+    - AFNetworking
+  - MWHttpUnit/Extension (0.3.9):
+    - AFNetworking
+  - MWHttpUnit/HTTP (0.3.9):
+    - AFNetworking
+  - MWHttpUnit/HTTPCacheUnit (0.3.9):
+    - AFNetworking
+    - MWHttpUnit/CacheUnit
+    - MWHttpUnit/Extension
+    - MWHttpUnit/HTTP
+  - SDWebImage (4.2.2):
+    - SDWebImage/Core (= 4.2.2)
+  - SDWebImage/Core (4.2.2)
+  - SocketRocket (0.5.1)
+
+DEPENDENCIES:
+  - Masonry
+  - MWHttpUnit (from `https://git.coding.net/iliunian/MWHttpUnit.git`)
+  - SDWebImage
+  - SocketRocket
+
+EXTERNAL SOURCES:
+  MWHttpUnit:
+    :git: https://git.coding.net/iliunian/MWHttpUnit.git
+
+CHECKOUT OPTIONS:
+  MWHttpUnit:
+    :commit: cebc48d0b67d5462e7d7be7dd98ee7f06cea5097
+    :git: https://git.coding.net/iliunian/MWHttpUnit.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MWHttpUnit: 34b05787039febe73643209398d73edd34f8a3d3
+  SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+
+PODFILE CHECKSUM: 6414498b002c746a48141581aa1759ec04b47476
+
+COCOAPODS: 1.3.1
