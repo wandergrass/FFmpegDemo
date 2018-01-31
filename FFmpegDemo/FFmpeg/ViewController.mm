@@ -10,6 +10,7 @@
 #import "SJMoiveObject.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *playImageView;
 @property (nonatomic, strong) SJMoiveObject *video;
 @end
 
@@ -21,13 +22,21 @@
     if (![url hasPrefix:@"rtsp://"]) {
         return;
     }
-   self.video = [[SJMoiveObject alloc] initWithVideo:@"你的链接"];
-    [NSTimer scheduledTimerWithTimeInterval: 1 / self.video.fps
-                                     target:self
-                                   selector:@selector(displayNextFrame:)
-                                   userInfo:nil
-                                    repeats:YES];
+   self.video = [[SJMoiveObject alloc] initWithVideo:@"rtsp://wr"];
+    if (self.video) {
+        
+        [NSTimer scheduledTimerWithTimeInterval: 1 / self.video.fps
+                                         target:self
+                                       selector:@selector(displayNextFrame:)
+                                       userInfo:nil
+                                        repeats:YES];
+    }
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+
+- (void)displayNextFrame:(NSTimer *)timer{
+    self.playImageView.image = self.video.currentImage;
 }
 
 - (void)didReceiveMemoryWarning {

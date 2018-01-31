@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,34 +18,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ABW-3V-u2H">
-                                <rect key="frame" x="0.0" y="20" width="375" height="211"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="czX-aP-gu0">
+                                <rect key="frame" x="67" y="158" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="ABW-3V-u2H" secondAttribute="height" multiplier="1280:720" id="iOu-ZU-qfN"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F59-ch-2Uq">
-                                <rect key="frame" x="87" y="278" width="200" height="200"/>
-                                <color key="backgroundColor" red="1" green="0.51428571428571423" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="ec0-rI-PaC"/>
-                                    <constraint firstAttribute="width" constant="200" id="rWB-wc-KNo"/>
+                                    <constraint firstAttribute="height" constant="128" id="nDj-am-fyW"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ABW-3V-u2H" secondAttribute="trailing" id="Iga-ge-m4u"/>
-                            <constraint firstItem="F59-ch-2Uq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="TKu-mH-mpn"/>
-                            <constraint firstItem="ABW-3V-u2H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zyh-c2-jOA"/>
-                            <constraint firstItem="ABW-3V-u2H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bgG-GT-Gz4"/>
-                            <constraint firstItem="F59-ch-2Uq" firstAttribute="top" secondItem="ABW-3V-u2H" secondAttribute="bottom" constant="47" id="vs9-Nb-Wgz"/>
+                            <constraint firstItem="czX-aP-gu0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="Ip5-GQ-2TB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="czX-aP-gu0" secondAttribute="trailing" constant="68" id="bcP-qp-5xG"/>
+                            <constraint firstItem="czX-aP-gu0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="138" id="jyf-GU-SID"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="ImageView" destination="ABW-3V-u2H" id="5oY-F1-UBu"/>
-                        <outlet property="faceView" destination="F59-ch-2Uq" id="z2q-dC-jcd"/>
+                        <outlet property="playImageView" destination="czX-aP-gu0" id="T58-RY-Y38"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

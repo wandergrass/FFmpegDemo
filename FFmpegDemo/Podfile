@@ -3,8 +3,4 @@
 target 'FFmpeg' do
   use_frameworks!
 
-  pod 'SocketRocket'
-pod 'Masonry'
-pod 'MWHttpUnit', :git=>'https://git.coding.net/iliunian/MWHttpUnit.git'
-pod 'SDWebImage'
 end

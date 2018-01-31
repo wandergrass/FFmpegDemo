@@ -1,6 +1,0 @@
-framework module MWHttpUnit {
-  umbrella header "MWHttpUnit-umbrella.h"
-
-  export *
-  module * { export * }
-}
