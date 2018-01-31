@@ -18,11 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *url = @"vvdf";
-    if (![url hasPrefix:@"rtsp://"]) {
-        return;
-    }
-   self.video = [[SJMoiveObject alloc] initWithVideo:@"rtsp://wr"];
+   self.video = [[SJMoiveObject alloc] initWithVideo:@"rtsp://184.72.239.149/vod/mp4://BigBuckBunny_175k.mov"];
     if (self.video) {
         
         [NSTimer scheduledTimerWithTimeInterval: 1 / self.video.fps
@@ -36,6 +32,10 @@
 
 
 - (void)displayNextFrame:(NSTimer *)timer{
+    if (![self.video stepFrame]) {
+        [timer invalidate];
+        return;
+    }
     self.playImageView.image = self.video.currentImage;
 }
 
